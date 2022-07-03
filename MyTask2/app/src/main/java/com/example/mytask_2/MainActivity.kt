@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.example.mytask_2.databinding.ActivityMainBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,5 +20,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         controller = (supportFragmentManager.findFragmentById(R.id.container) as NavHostFragment).navController
+        val bottonView = findViewById<BottomNavigationView>(R.id.btn_view)
+        bottonView.setupWithNavController(controller)
+
     }
 }
