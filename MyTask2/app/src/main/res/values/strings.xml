@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AniPh</string>
+    <string name="menu_cat">Cat</string>
+    <string name="menu_dog">Dog</string>
+    <string name="menu_kitty">Kitty</string>
+    <string name="menu_puppy">Puppy</string>
+    <string name="menu_dogcat">DogCat</string>
 </resources>

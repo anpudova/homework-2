@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/catsFragment"
+        android:enabled="true"
+        android:icon="@drawable/cat_main"
+        android:title="@string/menu_cat"/>
+
+    <item
+        android:id="@+id/dogsFragment"
+        android:enabled="true"
+        android:icon="@drawable/dog_main"
+        android:title="@string/menu_dog"/>
+
+    <item
+        android:id="@+id/kittyFragment"
+        android:enabled="true"
+        android:icon="@drawable/cat_main"
+        android:title="@string/menu_kitty"/>
+
+    <item
+        android:id="@+id/puppyFragment"
+        android:enabled="true"
+        android:icon="@drawable/dog_main"
+        android:title="@string/menu_puppy"/>
+    <item
+        android:id="@+id/dogCatFragment"
+        android:enabled="true"
+        android:icon="@drawable/icon_app"
+        android:title="@string/menu_dogcat"/>
+
+</menu>
