@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/catsFragment"
+        android:name="com.example.mytask_2.CatsFragment"
+        android:label="CatsFragment"
+        tools:layout="@layout/fragment_cats" >
+        <action
+            android:id="@+id/action_catsFragment_to_rateFragment"
+            app:destination="@id/rateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dogCatFragment"
+        android:name="com.example.mytask_2.DogCatFragment"
+        android:label="DogCatFragment"
+        tools:layout="@layout/fragment_dogcat" >
+        <action
+            android:id="@+id/action_dogCatFragment_to_rateFragment"
+            app:destination="@id/rateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dogsFragment"
+        android:name="com.example.mytask_2.DogsFragment"
+        android:label="DogsFragment"
+        tools:layout="@layout/fragment_dogs" >
+        <action
+            android:id="@+id/action_dogsFragment_to_rateFragment"
+            app:destination="@id/rateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kittyFragment"
+        android:name="com.example.mytask_2.KittyFragment"
+        android:label="KittyFragment"
+        tools:layout="@layout/fragment_kitty" >
+        <action
+            android:id="@+id/action_kittyFragment_to_rateFragment"
+            app:destination="@id/rateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.mytask_2.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_dogCatFragment"
+            app:destination="@id/dogCatFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_dogsFragment"
+            app:destination="@id/dogsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_puppyFragment"
+            app:destination="@id/puppyFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_kittyFragment"
+            app:destination="@id/kittyFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_catsFragment"
+            app:destination="@id/catsFragment" />
+    </fragment><fragment
+    android:id="@+id/puppyFragment"
+    android:name="com.example.mytask_2.PuppyFragment"
+    android:label="PuppyFragment"
+    tools:layout="@layout/fragment_puppydog" >
+    <action
+        android:id="@+id/action_puppyFragment_to_rateFragment"
+        app:destination="@id/rateFragment" />
+</fragment>
+    <fragment
+        android:id="@+id/rateFragment"
+        android:name="com.example.mytask_2.RateFragment"
+        android:label="RateFragment"
+        tools:layout="@layout/fragment_rate" />
+</navigation>
